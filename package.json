@@ -1,0 +1,22 @@
+{
+    "name": "claudewrite-theme",
+    "displayName": "ClaudeWrite Theme",
+    "description": "A light theme optimized for writing, coding and Claude AI interactions in Cursor",
+    "version": "0.1.0",
+    "publisher": "mat-silverstein",
+    "engines": {
+      "vscode": "^1.40.0"
+    },
+    "categories": [
+      "Themes"
+    ],
+    "contributes": {
+      "themes": [
+        {
+          "label": "ClaudeWrite",
+          "uiTheme": "vs",
+          "path": "./themes/ClaudeWrite-color-theme.json"
+        }
+      ]
+    }
+  }
