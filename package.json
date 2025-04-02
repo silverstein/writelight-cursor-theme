@@ -4,6 +4,15 @@
     "description": "A light theme optimized for writing, coding and Claude AI interactions in Cursor",
     "version": "0.1.0",
     "publisher": "mat-silverstein",
+    "author": {
+        "name": "Mat Silverstein",
+        "url": "https://businessvacation.com"
+    },
+    "homepage": "https://businessvacation.com",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/silverstein/writelight-cursor-theme.git"
+    },
     "engines": {
       "vscode": "^1.40.0"
     },
