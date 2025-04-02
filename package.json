@@ -1,6 +1,6 @@
 {
-    "name": "claudewrite-theme",
-    "displayName": "ClaudeWrite Theme",
+    "name": "writelight-theme",
+    "displayName": "WriteLight Theme",
     "description": "A light theme optimized for writing, coding and Claude AI interactions in Cursor",
     "version": "0.1.0",
     "publisher": "mat-silverstein",
@@ -13,9 +13,9 @@
     "contributes": {
       "themes": [
         {
-          "label": "ClaudeWrite",
+          "label": "WriteLight",
           "uiTheme": "vs",
-          "path": "./themes/ClaudeWrite-color-theme.json"
+          "path": "./themes/WriteLight-color-theme.json"
         }
       ]
     }

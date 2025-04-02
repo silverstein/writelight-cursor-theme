@@ -1,5 +1,5 @@
 {
-    "name": "ClaudeWrite",
+    "name": "WriteLight",
     "type": "light",
     "colors": {
       // Base UI
@@ -27,8 +27,12 @@
       "editorGutter.background": "#F8F9FA",
       
       // Text editor enhancements
-      "editor.findMatchBackground": "#FFEB3B40",
-      "editor.findMatchHighlightBackground": "#FFEB3B30",
+      "editor.findMatchBackground": "#FFEB3B70",
+      "editor.findMatchHighlightBackground": "#FFEB3B40",
+      "editor.findRangeHighlightBackground": "#EDF2F7",
+      "editor.findMatchBorder": "#FFC107",
+      "editor.wordHighlightBackground": "#E6FFFA80",
+      "editor.wordHighlightStrongBackground": "#B2F5EA80",
       "editorWidget.background": "#F5F5F5",
       "editorSuggestWidget.background": "#FFFFFF",
       "editorSuggestWidget.border": "#E2E8F0",
@@ -67,14 +71,52 @@
       "tab.activeForeground": "#2D3748",
       "tab.inactiveBackground": "#EDF2F7",
       "tab.inactiveForeground": "#718096",
-      "tab.activeBorder": "#4285F4"
+      "tab.activeBorder": "#4285F4",
+      
+      "editor.lineHeight": 1.6,
+      "editor.fontSize": 14,
+      "editor.letterSpacing": 0.2,
+      "editor.fontFamily": "'SF Mono', Menlo, Monaco, 'Courier New', monospace",
+      "editor.fontLigatures": true,
+      "editor.wordWrapColumn": 80,
+      "editor.rulers": [80],
+      "editor.wordWrap": "bounded",
+      "editor.cursorBlinking": "smooth",
+      "editor.cursorSmoothCaretAnimation": "on",
+      "editor.renderWhitespace": "boundary",
+      
+      "diffEditor.insertedTextBackground": "#C6F6D520",
+      "diffEditor.removedTextBackground": "#FDDCE520",
+      "diffEditor.insertedTextBorder": "#0B875B40",
+      "diffEditor.removedTextBorder": "#E53E3E40",
+      "gitDecoration.addedResourceForeground": "#38A169",
+      "gitDecoration.modifiedResourceForeground": "#3182CE",
+      "gitDecoration.deletedResourceForeground": "#E53E3E",
+      "gitDecoration.untrackedResourceForeground": "#805AD5",
+      "gitDecoration.ignoredResourceForeground": "#A0AEC0",
+      "gitDecoration.conflictingResourceForeground": "#DD6B20",
+      
+      "editorBracketMatch.background": "#BEE3F880",
+      "editorBracketMatch.border": "#4285F4",
+      "editorOverviewRuler.findMatchForeground": "#FFEB3B80",
+      "editorOverviewRuler.modifiedForeground": "#3182CE80",
+      "editorOverviewRuler.addedForeground": "#38A16980",
+      "editorOverviewRuler.deletedForeground": "#E53E3E80",
+      "editorOverviewRuler.errorForeground": "#E53E3E",
+      "editorOverviewRuler.warningForeground": "#DD6B20",
+      "editorOverviewRuler.infoForeground": "#3182CE",
+      "minimap.selectionHighlight": "#ADD6FF80",
+      "minimap.errorHighlight": "#E53E3E",
+      "minimap.warningHighlight": "#DD6B20",
+      "minimap.background": "#F8F9FACC"
     },
     "tokenColors": [
       // General
       {
         "scope": ["comment", "punctuation.definition.comment"],
         "settings": {
-          "foreground": "#718096"
+          "foreground": "#718096",
+          "fontStyle": "italic"
         }
       },
       {
@@ -134,6 +176,41 @@
         }
       },
       {
+        "scope": ["markup.heading.1"],
+        "settings": {
+          "foreground": "#6B46C1",
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": ["markup.heading.2"],
+        "settings": {
+          "foreground": "#805AD5",
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": ["markup.heading.3"],
+        "settings": {
+          "foreground": "#9F7AEA",
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": ["markup.heading.4"],
+        "settings": {
+          "foreground": "#B794F4",
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": ["markup.heading.5", "markup.heading.6"],
+        "settings": {
+          "foreground": "#D6BCFA",
+          "fontStyle": "bold"
+        }
+      },
+      {
         "scope": ["markup.bold"],
         "settings": {
           "foreground": "#2D3748",
@@ -149,6 +226,18 @@
       },
       {
         "scope": ["markup.list"],
+        "settings": {
+          "foreground": "#3182CE"
+        }
+      },
+      {
+        "scope": ["markup.list.numbered"],
+        "settings": {
+          "foreground": "#2B6CB0"
+        }
+      },
+      {
+        "scope": ["markup.list.unnumbered"],
         "settings": {
           "foreground": "#3182CE"
         }
@@ -170,6 +259,51 @@
         "scope": ["markup.link"],
         "settings": {
           "foreground": "#3182CE"
+        }
+      },
+      {
+        "scope": ["markup.link.url", "markup.underline.link"],
+        "settings": {
+          "foreground": "#4299E1",
+          "fontStyle": "underline"
+        }
+      },
+      {
+        "scope": ["markup.link.entity"],
+        "settings": {
+          "foreground": "#4299E1"
+        }
+      },
+      {
+        "scope": ["markup.strikethrough"],
+        "settings": {
+          "foreground": "#A0AEC0",
+          "fontStyle": "strikethrough"
+        }
+      },
+      {
+        "scope": ["meta.separator"],
+        "settings": {
+          "foreground": "#A0AEC0",
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": ["markup.inserted"],
+        "settings": {
+          "foreground": "#38A169"
+        }
+      },
+      {
+        "scope": ["markup.deleted"],
+        "settings": {
+          "foreground": "#E53E3E"
+        }
+      },
+      {
+        "scope": ["markup.changed"],
+        "settings": {
+          "foreground": "#DD6B20"
         }
       }
     ]
